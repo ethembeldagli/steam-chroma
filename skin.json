@@ -1,0 +1,152 @@
+{
+ "name": "Chroma",
+ "author": "ethembeldagli",
+ "description": "The whole UI takes the colour of the game you are on",
+ "version": "1.0.0",
+ "tags": [
+  "Dark",
+  "Animated",
+  "Customizable"
+ ],
+ "github": {
+  "owner": "ethembeldagli",
+  "repo_name": "steam-chroma"
+ },
+ "header_image": "https://raw.githubusercontent.com/ethembeldagli/steam-chroma/main/screenshots/library.png",
+ "splash_image": "https://raw.githubusercontent.com/ethembeldagli/steam-chroma/main/screenshots/gamepage.png",
+ "RootColors": "mx/root.css",
+ "Steam-WebKit": "mx/webkit.css",
+ "Conditions": {
+  "Accent color": {
+   "description": "Pick the accent used for highlights, buttons and glows.",
+   "tab": "Theme",
+   "default": "Auto (from game)",
+   "values": {
+    "Auto (from game)": {},
+    "Violet": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/accent-violet.css"
+     }
+    },
+    "Lime": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/accent-lime.css"
+     }
+    },
+    "Coral": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/accent-coral.css"
+     }
+    }
+   }
+  },
+  "Corners": {
+   "description": "Corner style for panels, covers and buttons.",
+   "tab": "Theme",
+   "default": "Theme default",
+   "values": {
+    "Theme default": {},
+    "Sharp": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/corners-sharp.css"
+     }
+    },
+    "Extra round": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/corners-round.css"
+     }
+    }
+   }
+  },
+  "Motion": {
+   "description": "Reduce turns off all animations and transitions (fastest on slow machines).",
+   "tab": "Theme",
+   "default": "Full",
+   "values": {
+    "Full": {},
+    "Reduced": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/motion-reduced.css"
+     }
+    }
+   }
+  },
+  "Backdrop": {
+   "description": "The theme background pattern behind the window.",
+   "tab": "Theme",
+   "default": "On",
+   "values": {
+    "On": {},
+    "Off": {
+     "TargetCss": {
+      "affects": [
+       ".*"
+      ],
+      "src": "mx/opt/backdrop-off.css"
+     }
+    }
+   }
+  }
+ },
+ "Patches": [
+  {
+   "MatchRegexString": "^Steam$",
+   "TargetCss": "mx/main.css",
+   "TargetJs": "mx/main.js"
+  },
+  {
+   "MatchRegexString": ".ModalDialogPopup",
+   "TargetCss": "mx/main.css"
+  },
+  {
+   "MatchRegexString": ".friendsui-container",
+   "TargetCss": "mx/main.css"
+  },
+  {
+   "MatchRegexString": ".Rp8QOGJ2DypeDniMnRBhr",
+   "TargetCss": "mx/main.css"
+  },
+  {
+   "MatchRegexString": "^notificationtoasts_",
+   "TargetCss": "mx/popup.css"
+  },
+  {
+   "MatchRegexString": ".ContextMenuPopup",
+   "TargetCss": "mx/popup.css"
+  },
+  {
+   "MatchRegexString": "Menu$",
+   "TargetCss": "mx/popup.css"
+  },
+  {
+   "MatchRegexString": "Supernav$",
+   "TargetCss": "mx/popup.css"
+  },
+  {
+   "MatchRegexString": "https://.*\\.steampowered\\.com(/.*)?",
+   "TargetJs": "mx/webkit.js"
+  },
+  {
+   "MatchRegexString": "https://steamcommunity\\.com(/.*)?",
+   "TargetJs": "mx/webkit.js"
+  }
+ ]
+}
