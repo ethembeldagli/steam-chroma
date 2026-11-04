@@ -23,28 +23,28 @@
    "default": "Auto (from game)",
    "values": {
     "Auto (from game)": {},
-    "Violet": {
+    "Fixed emerald": {
      "TargetCss": {
       "affects": [
        ".*"
       ],
-      "src": "mx/opt/accent-violet.css"
+      "src": "mx/opt/accent-fixedemerald.css"
      }
     },
-    "Lime": {
+    "Fixed magenta": {
      "TargetCss": {
       "affects": [
        ".*"
       ],
-      "src": "mx/opt/accent-lime.css"
+      "src": "mx/opt/accent-fixedmagenta.css"
      }
     },
-    "Coral": {
+    "Fixed gold": {
      "TargetCss": {
       "affects": [
        ".*"
       ],
-      "src": "mx/opt/accent-coral.css"
+      "src": "mx/opt/accent-fixedgold.css"
      }
     }
    }

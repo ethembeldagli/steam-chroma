@@ -17,7 +17,7 @@ https://github.com/ethembeldagli/steam-chroma
 
 ## Settings
 Steam → Millennium → Themes → Chroma → ⚙
-- **Accent color:** Auto (from game), Violet, Lime, Coral
+- **Accent color:** Auto (from game), or fixed Emerald, Magenta, Gold
 - **Corners:** default, sharp, extra round
 - **Motion:** full or reduced
 - **Backdrop:** on or off
